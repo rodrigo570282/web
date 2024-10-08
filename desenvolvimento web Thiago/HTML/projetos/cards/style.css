@@ -1,3 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main {
+    padding: 20;
+}
+
+.card-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
 .card-container .card img{
     width: 200px;
     max-width: 200px;
@@ -9,6 +25,9 @@
     flex-direction: column;
     justify-content: center;
     width: 300px;
+    padding: 20px;
+    /*      top rh low left cor */
+    box-shadow: 0 0 12px 12px blue ;
     
 }
 
