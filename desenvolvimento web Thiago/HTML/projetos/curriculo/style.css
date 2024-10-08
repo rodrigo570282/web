@@ -1,0 +1,58 @@
+.imagem-arredondada {
+    border-radius: 50%; /* Arredonda a imagem para um formato circular */
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+.imagem {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container2 {
+    display: grid; /* Usa grid para organizar os cards */
+    grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento ao redor do contêiner */
+    border: 1px solid #ccc; /* Borda do container */
+    border-radius: 5px; /* Cantos arredondados */
+}
+/* Estiliza cada card */
+.card {
+    text-align: center;>
+    background: #f9f9f9; /* Cor de fundo do card */
+    border: 1px solid #ccc; /* Borda do card */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno do card */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do card */
+}
+.mdi-linkedin {
+    color: #0077b5; /* Cor do ícone */
+  }
+.mdi-github {
+    color: darkgreen;
+}
+.mdi-phone {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .container2 {
+        grid-template-columns: 1fr; /* Uma coluna para telas menores */
+        padding: 10px; /* Reduz o espaçamento */
+    }
+
+    .card {
+        padding: 15px; /* Reduz o espaçamento interno do card */
+        margin: 10px 0; /* Adiciona margem entre os cards */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte do título */
+    }
+}
+
