@@ -1,0 +1,13 @@
+[
+    {
+        "nome": "Coca-Cola",
+        "quantidade": 50,
+        "valor": 4.50
+    },
+    {
+        "nome": "Cigarro",
+        "quantidade": 250,
+        "valor": 5
+    }
+
+]

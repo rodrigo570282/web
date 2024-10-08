@@ -1,0 +1,10 @@
+while True:
+    print('########################################')
+    print('#      RELATÓRIO DE VENDAS             #')
+    print('#                                      #')
+    print('#       (1) - VENDAS DO DIA            #')
+    print('#       (2) - VENDAS DA SEMANA         #')
+    print('#       (3) - VENDAS DO MÊS            #')
+    print('#       (4) - VOLTAR                   #')
+    print('#                                      #')
+    print('########################################')

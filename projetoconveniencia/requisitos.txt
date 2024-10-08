@@ -1,0 +1,75 @@
+Requisitos Conveniência/Mercearia 
+
+1. Introdução 
+
+Este documento descreve os requisitos funcionais e não funcionais para o desenvolvimento de um Sistema de Conveniência/Mercearia, visando atender às necessidades básicas do cliente. 
+
+2. Necessidades Básicas 
+
+O sistema deve ter poucas funcionalidades, focando apenas no essencial. 
+
+Interface com botões e números grandes para facilitar a usabilidade. 
+
+Opções para aumentar e diminuir a exibição de botões e preços. 
+
+Uso de cores visíveis para melhorar a acessibilidade. 
+
+3. Requisitos Funcionais 
+
+3.1 Registro de Entrada de Mercadorias 
+
+Funcionalidade: O sistema deve permitir o registro de mercadorias que entram no estoque. 
+
+Dados a serem registrados: 
+
+Data de entrada 
+
+Data de validade 
+
+Quantidade 
+
+Preço 
+
+3.2 Registro de Saída de Mercadorias 
+
+Funcionalidade: O sistema deve registrar a saída de mercadorias do estoque. 
+
+Requisitos: 
+
+A quantidade de saída deve ser subtraída da quantidade total registrada na entrada. 
+
+3.3 Avisos de Estoque 
+
+Funcionalidade: O sistema deve gerar avisos quando o estoque de qualquer mercadoria estiver abaixo de 10 unidades. 
+
+Detalhes: 
+
+O aviso deve ser visualizado em vermelho para maior destaque. 
+
+3.4 Registro de Vendas 
+
+Funcionalidade: O sistema deve registrar as vendas realizadas. 
+
+Dados a serem registrados: 
+
+Total gasto em mercadorias durante as vendas. 
+
+3.5 Registro de Compras 
+
+Funcionalidade: O sistema deve registrar as compras feitas. 
+
+Dados a serem registrados: 
+
+Total gasto em mercadorias durante as compras. 
+
+4. Requisitos Não Funcionais 
+
+Usabilidade: A interface deve ser intuitiva e fácil de usar, especialmente para usuários com dificuldades de visão. 
+
+Performance: O sistema deve processar entradas e saídas de mercadorias de forma rápida, sem atrasos significativos. 
+
+Acessibilidade: O design deve seguir princípios de acessibilidade, garantindo que todas as funcionalidades sejam utilizáveis por todos os perfis de usuários. 
+
+5. Conclusão 
+
+O Sistema de Conveniência/Mercearia deve atender às necessidades básicas do cliente, priorizando a simplicidade e a eficiência. 

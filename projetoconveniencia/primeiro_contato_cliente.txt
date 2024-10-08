@@ -1,0 +1,37 @@
+1ºContato com o Cliente: 
+
+Pré requisitos para o Sistema de Conveniência/Mercearia 
+
+ 
+
+Necessidade basica: poucas funcionalidades!!!!( apenas o essencial) 
+
+-botoes e numeros grandes(opcao de aumentar e diminuir a exibição de botões, e preços) 
+
+-cores que se tornem visiveis 
+
+ 
+
+-registro de entrada mercadoria : 
+
+com data, validade, Quantidade, Preço 
+
+ 
+
+-registro de saida mercadoria: 
+
+Quantidade deve subtrair da quantidade de entrada. 
+
+ 
+
+-gerar avisos! Quando o estoque estiver abaixo de 10 unidades (cor vermelha de preferencia como alerta) 
+
+ 
+
+-Registro de VENDAS  : 
+
+Total gasto em mercadorias 
+
+-Registo de COMPRAS: 
+
+Total gasto em mercadorias 
