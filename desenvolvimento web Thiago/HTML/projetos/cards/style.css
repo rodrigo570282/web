@@ -5,6 +5,15 @@
 main {
     padding: 20;
 }
+body {
+    background-color: rgb(0, 0, 0);
+}
+h1,h2,p {
+    color: aliceblue;
+}
+h2,h1{
+    text-align: center;
+}
 
 .card-container {
     margin-top: 20px;
@@ -20,7 +29,10 @@ main {
 }
 
 .card-container .card{
-    border: 1px solid black;
+    border: px solid black;
+    /* arredondar borda dos cards */
+    border-radius: 10px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,5 +41,10 @@ main {
     /*      top rh low left cor */
     box-shadow: 0 0 12px 12px blue ;
     
+}
+
+.card img {
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
