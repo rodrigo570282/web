@@ -25,7 +25,7 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>30</y>
       <width>601</width>
       <height>371</height>
@@ -136,12 +136,12 @@
       </column>
       <column>
        <property name="text">
-        <string>Preço (R$)</string>
+        <string>Qtd em estoque</string>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Qtd em estoque</string>
+        <string>Valor (R$)</string>
        </property>
       </column>
      </widget>
@@ -197,9 +197,15 @@
      <rect>
       <x>100</x>
       <y>60</y>
-      <width>120</width>
-      <height>341</height>
+      <width>95</width>
+      <height>74</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 170, 127);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::StyledPanel</enum>
@@ -207,6 +213,22 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="text">
+        <string>Itens</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="text">
+        <string>Pagamentos</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>
