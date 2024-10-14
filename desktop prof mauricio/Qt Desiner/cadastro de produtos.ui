@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>885</width>
+    <width>778</width>
     <height>680</height>
    </rect>
   </property>
@@ -17,15 +17,19 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>861</width>
-     <height>501</height>
+     <y>20</y>
+     <width>751</width>
+     <height>411</height>
     </rect>
    </property>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>220</x>
+=======
+      <x>140</x>
+>>>>>>> cffce6f732210400daf275456b28734997c871a7
       <y>30</y>
       <width>601</width>
       <height>371</height>
@@ -195,10 +199,17 @@
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>100</x>
       <y>60</y>
       <width>95</width>
       <height>74</height>
+=======
+      <x>10</x>
+      <y>50</y>
+      <width>120</width>
+      <height>341</height>
+>>>>>>> cffce6f732210400daf275456b28734997c871a7
      </rect>
     </property>
     <property name="autoFillBackground">
