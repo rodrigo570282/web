@@ -1,0 +1,107 @@
+/* edita a margem da pagina */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* edita a fonte */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;   
+}
+/* inserir imagem */
+main{
+    height: 92vh;
+    background-image: url("imagens/tela de fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: center;
+    background-size: cover;
+
+}
+
+/* NAVBAR */
+nav {
+    gap: 30px;
+    /* cor */
+    background-color: black;
+    /* separa o logo da lista */
+    display: flex;
+    /* distribui o conteudo da navbar */
+    justify-content: space-around; 
+     /*centraliza o conteudo na navbar  */
+    align-items: center;
+    /* altura da navbar */
+    height: 8vh;
+}
+/* edição do logo */
+.logo{
+    /* texto em caixa alta */
+    text-transform: uppercase;
+    /* espaço entre as letras */
+    letter-spacing: 2px;
+}
+.card {
+    position: relative;
+    z-index: 1;
+
+}
+/* cor do texto da navbar */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    /* mudar quando passa o mouse */
+    opacity: 0.5;
+    font-size: 20px;
+    /* animação */
+    transform: scale(1.1);
+}
+/* edição da lista */
+ul{
+    /* lista na horizontal */
+    display: flex;
+    list-style: none;
+    /* espaçamento */
+    gap: 30px;
+    /* espaçamento entre as letras */
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+/* cards */
+
+.card-container {
+    /* margem superior */
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.card img{
+    /* tamanho da imagem */
+    width: 200px;
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.card-container .card{
+    margin: 10px;
+    border: px solid black;
+    background-color: #fff;
+    /* arredondar borda dos cards */
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    padding: 20px;
+    /*      top rh low left cor */
+    box-shadow: 0 0 2px 5px blue ;
+    
+}
+
