@@ -1,0 +1,32 @@
+
+main{
+    padding: 2rem;
+}
+.form-header {
+    margin-bottom: 2rem;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.form-input{
+
+}
+.form-action{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-action{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+.form-input label {
+    font-size: 0rem;
+}
+@media (max-width: 460px) {
+    .form{}
+}
+
