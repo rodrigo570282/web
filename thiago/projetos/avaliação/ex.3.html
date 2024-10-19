@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+</head>
+
+<body>
+    <main>
+
+        <div class="calculadora">
+            <p>Soma 2 numeros</p>
+            <div>
+                <label for="">A</label>
+                <input type="number" name="A">
+            </div>
+               
+                <button onclick="divisao()">Divisão</button>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        
+        function divisao() {
+            const a = document.querySelector('[name="A"]').value
+
+            const res = Number(a) / 5
+
+
+            if (res % 0) {
+            greeting = "Good day";
+            } else {
+            greeting = "Good evening";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

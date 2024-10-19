@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+</head>
+
+<body>
+    <main>
+
+        <div class="calculadora">
+            <p>Potenciação</p>
+            <div>
+                <label for="">A</label>
+                <input type="number" name="A">
+            </div>
+         
+            <div>
+                <label for="">res</label>
+                <input type="text" name="R">
+            </div>
+            <div>
+                <button onclick="pot()">Potenciação</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function pot() {
+            const a = document.querySelector('[name="A"]').value
+
+            document.querySelector('[name="R"]').value = Number(a) ** 2;
+        }
+        
+
+
+    </script>
+</body>
+
+</html>
