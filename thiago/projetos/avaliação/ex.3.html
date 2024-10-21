@@ -12,13 +12,18 @@
     <main>
 
         <div class="calculadora">
-            <p>Soma 2 numeros</p>
+            <p>Resto da divisão por 5</p>
             <div>
-                <label for="">A</label>
+                <label for="">valor</label>
                 <input type="number" name="A">
             </div>
+            <div>
+                <label for="">resto</label>
+                <input type="text" name="R" readonly>
+            </div>
                
-                <button onclick="divisao()">Divisão</button>
+                <button onclick="divisao()">resto da divisão</button>
+                <p id="resultado"></p>  <!-- exibe o resultado -->
 
             </div>
         </div>
@@ -28,15 +33,17 @@
         
         function divisao() {
             const a = document.querySelector('[name="A"]').value
+            const res = Number(a) % 5;
+            document.querySelector('[name="R"]').value= res;
+           
 
-            const res = Number(a) / 5
-
-
-            if (res % 0) {
-            greeting = "Good day";
+            let greeting;
+            if (res === 0) {
+            greeting = "Esse número é divisivel por 5";
             } else {
-            greeting = "Good evening";
+            greeting = "Esse número não é divisivel por 5";
             }
+            document.getElementById('resultado').textContent=greeting
         }
 
 
