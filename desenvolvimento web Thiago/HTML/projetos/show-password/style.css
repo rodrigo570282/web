@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.form-input{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+}
+.password input {
+    width: ;
+}
