@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
+    <title>ex.2</title>
 
 </head>
 
@@ -12,29 +12,34 @@
     <main>
 
         <div class="calculadora">
-            <p>Potenciação</p>
+            <p>2. Escreva um algoritmo em PORTUGOL que leia um número e imprima a raiz quadrada do número caso ele seja positivo ou igual a zero e o quadrado do número caso ele seja negativo.</p>
             <div>
-                <label for="">A</label>
-                <input type="number" name="A">
+                <label for="">Num</label>
+                <input type="number" name="A" id="a">
             </div>
          
             <div>
-                <label for="">res</label>
-                <input type="text" name="R">
+                <label for="res">Resultado</label>
+                <input type="number" name="R" id="res" readonly>
             </div>
             <div>
-                <button onclick="pot()">Potenciação</button>
+                <button onclick="calcular()">Calcular</button>
             </div>
         </div>
     </main>
 
     <script>
-        function pot() {
-            const a = document.querySelector('[name="A"]').value
-
-            document.querySelector('[name="R"]').value = Number(a) ** 2;
+        function calcular(){
+            const a = Number(document.getElementById('a').value);
+            const resultadoInput = document.getElementById('res');
+            
+        if (a >= 0) {
+            document.querySelector('[name="R"]').value = Math.sqrt(a);
         }
-        
+        if (a < 0){
+            resultadoInput.value = a ** 2;
+        }
+    }
 
 
     </script>
