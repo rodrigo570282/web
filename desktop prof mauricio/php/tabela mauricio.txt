@@ -1,0 +1,49 @@
+create database exercicios;
+use exercicios;
+
+create table clientes(
+    cliente_id int primary key auto_increment,
+    nome varchar(50) not null,
+    email varchar(100) not null unique,
+    telefone varchar(15) not null,
+    data_cadastro timestamp default current_timestamp
+);
+
+create table categorias(
+    categoria_id int primary key auto_increment,
+    nome varchar(50) not null unique,
+    descricao text
+);
+
+create table produtos(
+    produto_id int primary key auto_increment,
+    nome varchar(100) not null,
+    preco decimal(10,2) not null check (preco > 0),
+    estoque int default 0 check (estoque >= 0), -- Estoque permite 0
+    categoria_id int not null,
+    foreign key (categoria_id) references categorias(categoria_id)
+);
+
+create table pedidos(
+    pedido_id int primary key auto_increment,
+    cliente_id int not null,
+    foreign key (cliente_id) references clientes(cliente_id), 
+    data_pedido timestamp default current_timestamp
+);
+
+create table itensPedido(
+    item_id int primary key auto_increment,
+    pedido_id int not null,
+    foreign key (pedido_id) references pedidos(pedido_id),
+    produto_id int not null,
+    foreign key (produto_id) references produtos(produto_id),
+    quantidade int not null check (quantidade > 0),
+    preco_unitario decimal(10,2) not null check(preco_unitario > 0)
+);
+
+create table funcionarios(
+    funcionario_id int primary key auto_increment,
+    nome varchar(50) not null,
+    cargo enum ('vendedor', 'gerente', 'caixa') not null,
+    salario decimal (10,2) not null check (salario > 0)
+);
