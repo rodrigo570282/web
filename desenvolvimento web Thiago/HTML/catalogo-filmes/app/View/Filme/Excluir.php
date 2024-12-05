@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     return header("Location: Listar.php");
 }
 
-$id = (int) $_POST["id"];
+$id = (int) $_POST["id"];s
 
 $filmeModel = new Filme($conn);
 $sucesso = $filmeModel->delete($id);

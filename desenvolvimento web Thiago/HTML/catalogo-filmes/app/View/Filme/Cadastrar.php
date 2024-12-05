@@ -10,7 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $filmeModel->insert(
             $_POST["titulo"],
             $_POST["ano"],
-            $_POST["descricao"]
+            $_POST["descricao"],
+            $_POST["link_img"]
         );
 
         return header("Location: Listar.php");
@@ -40,8 +41,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <label for="descricao">Descrição</label>
             <textarea name="descricao" rows="5"></textarea>
         </div>
-
+        <div>
+            <label for="link_img">Link da imagem</label>
+            <textarea name="link_img"></textarea>
+        </div>
+       
         <button>Salvar</button>
+        <!-- botão voltar -->
+        <form action="Listar.php" method="GET">
+        <button>Voltar</button>
+        </form>
+
+
     </form>
 </body>
 </html>

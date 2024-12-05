@@ -55,8 +55,8 @@ $filmes = $filmeModel->findAll();
                 <th>Titulo</th>
                 <th>Ano</th>
                 <th>Descrição</th>
-                <th>Ação</th>
                 <th>Imagem</th>
+                <th>Ação</th>
             </tr>
         </thead>
         <tbody>
@@ -68,6 +68,9 @@ $filmes = $filmeModel->findAll();
                     <td><?php echo $filme->titulo ?></td>
                     <td><?php echo $filme->ano ?></td>
                     <td><?php echo $filme->descricao ?></td>
+                    <!-- inserir imagem na tabela -->
+                    <td><img height="50" src="<?php echo $filme->link_img?>" alt=""> </td> 
+                    
                     <td>
                         <form action="Visualizar.php" method="GET">
                             <input 
@@ -93,6 +96,7 @@ $filmes = $filmeModel->findAll();
                             >
                             <button>Editar</button>
                         </form>
+                       
                     </td>
                 </tr>
             <?php } ?>

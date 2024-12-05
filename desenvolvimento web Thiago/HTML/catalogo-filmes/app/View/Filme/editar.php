@@ -14,9 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $titulo = $_POST['titulo'];
     $ano = $_POST['ano'];
     $descricao = $_POST['descricao'];
+    $link_img = $_POST['link_img'];
 
      // Atualiza o filme no banco de dados
-     $filmeModel->update($id, $titulo, $ano, $descricao);
+     $filmeModel->update($id, $titulo, $ano, $descricao,$link_img);
 
      // Redireciona de volta para a lista de filmes após a atualização
      header("Location: listar.php?mensagem=sucesso");
@@ -45,9 +46,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <h1>Editar Filme</h1>
 
+    <p><img height="300" src="<?php echo $filme->link_img?>" alt=""></p>
+
     <!-- Formulário de Edição -->
     <form action="editar.php?id=<?php echo $filme->id ?>" method="POST">
         <input type="hidden" name="id" value="<?php echo $filme->id ?>">
+
+
         <label for="titulo">Título</label>
         <input type="text" name="titulo" value="<?php echo htmlspecialchars($filme->titulo); ?>" required>
         
@@ -57,8 +62,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <label for="descricao">Descrição</label>
         <textarea name="descricao" required><?php echo htmlspecialchars($filme->descricao); ?></textarea>
 
-        <button type="submit">Atualizar</button>
-    </form>
+        <label for="link_img">Link da imagem</label>
+        <input type="text" name="link_img" value="<?php echo htmlspecialchars($filme->link_img); ?>" required>
+
+
+        
+        <form action="editar.php" method="POST">
+            <input 
+            type="hidden"
+            name="id" 
+            value="<?php echo $filme->id ?>"
+        >
+        <button>Atualizar</button>
+        </form>
+
+
+        </form>
+        <!-- botão voltar -->
+        <form action="Listar.php" method="GET">
+        <button>Voltar</button>
+        </form>
 
     <h3>Título: <?php echo htmlspecialchars($filme->titulo); ?></h3>
     <p>Ano: <?php echo htmlspecialchars($filme->ano); ?></p>
